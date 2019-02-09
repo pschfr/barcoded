@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/pschfr/barcoded/issues"
   },
-  "homepage": "https://github.com/pschfr/barcoded#readme"
+  "homepage": "https://github.com/pschfr/barcoded#readme",
+  "dependencies": {
+    "harp": "^0.29.0"
+  }
 }
