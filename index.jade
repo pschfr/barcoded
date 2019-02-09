@@ -1,7 +1,11 @@
-h1 Backroom Barcode Generator
-canvas#barcode
+h1.ma0 Barcode Generator
+p.ma0 Here you can print location labels, DPCIs, cart labels, etc.
+canvas#barcode.mw-100
 
 form
 	label(for="input")
-		| Input
-		input(type="text" name="input" id="input")
+		small
+			| Remember to prefix locations with <kbd>L</kbd>, and suffix them with <kbd>$</kbd>.<br/>
+			| DPCIs may need prefixed with <kbd>49</kbd>.<br/>
+			| Cart labels start with <kbd>SHP</kbd>, and end with two letters.<br/>
+		input(type="text" name="input" id="input" autofocus)

@@ -1,10 +1,10 @@
 doctype
 html
   head
-    title Backroom Barcode Generator
+    title Barcode Generator
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css")
-  body.sans-serif
+  body.sans-serif.tc.lh-copy.flex.flex-column.items-center.justify-around.vh-100
     != yield
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/barcodes/JsBarcode.code39.min.js" defer)
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/JsBarcode.all.min.js" defer)
     script(src="/main.js" defer)
