@@ -1,0 +1,24 @@
+{
+  "name": "barcoded",
+  "version": "1.0.0",
+  "description": "Text -> barcode generator for my secret missions. Lol.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pschfr/barcoded.git"
+  },
+  "keywords": [
+    "harp",
+    "barcode",
+    "jsbarcode"
+  ],
+  "author": "Paul Schaefer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pschfr/barcoded/issues"
+  },
+  "homepage": "https://github.com/pschfr/barcoded#readme"
+}
