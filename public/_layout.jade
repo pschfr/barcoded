@@ -7,7 +7,4 @@ html
   body.sans-serif.tc.lh-copy.flex.flex-column.items-center.justify-around.vh-100
     != yield
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/JsBarcode.all.min.js" defer)
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/1.0.14/tesseract.min.js" defer)
-    script(src="/js/main.js" defer)
-    script(src="/js/camera.js" defer)
-    script(src="/js/ocr.js" defer)
+    script(src="#{process.env.PROJECT_ROOT || '/'}js/main.js" defer)
