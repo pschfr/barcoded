@@ -1,4 +1,4 @@
-# [barcoded](https://barcoded.herokuapp.com/)
+# [barcoded](https://pschfr.github.io/barcoded/)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/pschfr/barcoded.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/pschfr/barcoded.svg?branch=master)](https://travis-ci.org/pschfr/barcoded)
