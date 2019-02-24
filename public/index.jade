@@ -2,12 +2,12 @@ h1.ma0=title
 p.ma0 Here you can generate a barcode for location labels, DPCIs, cart labels, etc!
 p.ma0 View the source on 
 	a(href="#{source}" target="_blank") GitHub.
-canvas(id="barcode" class="mw-100" data-default="#{location}")
+div(id="barcode" class="mw-100" data-default="#{location}")
 
 form
 	label(for="input")
 		small
 			| Remember to prefix locations with <kbd>L</kbd>, and suffix them with <kbd>$</kbd>.<br/>
-			| DPCIs may need prefixed with <kbd>49</kbd>.<br/>
+			| DPCIs may need prefixed with <kbd>49</kbd>. and occasionally suffixed with <kbd>9</kbd>.<br/>
 			| Cart labels start with <kbd>SHP</kbd>, and end with two letters.<br/>
 		input(type="text" name="input" id="input" class="tc" autofocus placeholder="#{location}")
