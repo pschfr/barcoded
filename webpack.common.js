@@ -5,7 +5,7 @@ const webpack = require('webpack');
 // Common Webpack settings go here
 module.exports = {
 	// Input file
-	entry: './public/js/imports.js',
+	entry: './public/js/_imports.js',
 	// Output bundle location
 	output: {
 		filename: 'compiled.js',
