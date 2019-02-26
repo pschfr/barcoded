@@ -1,10 +1,10 @@
-h1.ma0=title
-p.ma0 Here you can generate a barcode for location labels, DPCIs, cart labels, etc!
-div(id="barcode" class="mw-100" data-default="#{location}")
+h1= title
+#barcode.mw-100(data-default="#{location}")
 
 form
 	label(for="input")
 		input(type="text" name="input" id="input" class="tc" autofocus placeholder="#{location}")
 
-p.ma0
-	a(href="#{process.env.PROJECT_ROOT || '/'}help.html") What is this?
+p
+	em
+		a(href="#{process.env.PROJECT_ROOT || '/'}help.html") What is this?
