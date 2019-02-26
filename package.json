@@ -1,7 +1,7 @@
 {
   "name": "barcoded",
   "version": "1.0.0",
-  "description": "Text -> barcode generator for my secret missions. Lol.",
+  "description": "This website is a simple barcode generator, used for DPCIs, backroom locations, cart labels, or whatever you may need!",
   "main": "index.js",
   "scripts": {
     "serve": "webpack --config webpack.dev.js; harp server --port $PORT",

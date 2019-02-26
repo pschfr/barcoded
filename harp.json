@@ -2,6 +2,7 @@
 	"globals": {
 		"title": "Barcode Generator",
 		"source": "https://github.com/pschfr/barcoded/",
-		"location": "L01A001A01$"
+		"location": "L01A001A01$",
+		"description": "This website is a simple barcode generator, used for DPCIs, backroom locations, cart labels, or whatever you may need!"
 	}
 }
