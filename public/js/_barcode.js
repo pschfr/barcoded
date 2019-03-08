@@ -2,20 +2,14 @@
 const ioBarcode = require('io-barcode');
 
 // Only on index page
-if (window.location.pathname == '/') {
+if (window.location.pathname == '/' || window.location.pathname == '/barcoded/') {
 	// My constants
 	const container = document.getElementById('barcode');
 	const input  = document.getElementById('input');
 	const params = new URLSearchParams(window.location.search);
-	// io-barcode options, see https://github.com/wavded/io-barcode#iobarcodetypecode-opts
-	const barcodeOpts = {
-		displayValue: true,
-		font: 'sans-serif',
-		fontSize: 16
-	};
 
 	// Render an example barcode on load
-	const exampleBarcode = ioBarcode.CODE128B(barcode.dataset.default, barcodeOpts);
+	const exampleBarcode = ioBarcode.CODE128B(barcode.dataset.default, barcode_opts);
 
 	// Render the exampleBarcode directly
 	container.appendChild(exampleBarcode);
@@ -28,7 +22,7 @@ if (window.location.pathname == '/') {
 		// If input is not empty,
 		if (input.value != '') {
 			// Render a barcode from the input value
-			let newBarcode = ioBarcode.CODE128B(this.value, barcodeOpts);
+			let newBarcode = ioBarcode.CODE128B(this.value, barcode_opts);
 			// and append to page.
 			container.appendChild(newBarcode);
 		} else {
@@ -42,7 +36,7 @@ if (window.location.pathname == '/') {
 		// set the input value,
 		input.value = params.get('input');
 		// render a barcode,
-		let newBarcode = ioBarcode.CODE128B(params.get('input'), barcodeOpts);
+		let newBarcode = ioBarcode.CODE128B(params.get('input'), barcode_opts);
 		// and append to page.
 		container.innerHTML = '';
 		container.appendChild(newBarcode);

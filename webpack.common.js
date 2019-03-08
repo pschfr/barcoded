@@ -18,12 +18,18 @@ module.exports = {
 			ioBarcode: "io-barcode"
 		}),
 
-		// Passes through certain environment variables
 		new webpack.DefinePlugin({
+			// Passes through certain environment variables
 			'process.env': {
 				TEAM_MEMBER_NUMBER: JSON.stringify(process.env.TEAM_MEMBER_NUMBER),
 				TEAM_MEMBER_PASSWORD: JSON.stringify(process.env.TEAM_MEMBER_PASSWORD),
 				CART_LABEL: JSON.stringify(process.env.CART_LABEL)
+			},
+			// io-barcode options, see https://github.com/wavded/io-barcode#iobarcodetypecode-opts
+			'barcode_opts': {
+				displayValue: JSON.stringify(true),
+				font: JSON.stringify('sans-serif'),
+				fontSize: JSON.stringify(16)
 			}
 		})
 	]
