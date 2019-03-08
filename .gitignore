@@ -1,3 +1,4 @@
 www
 node_modules
 public/js/compiled.js
+.env

@@ -6,5 +6,5 @@ html
     link(rel="stylesheet" href="#{process.env.PROJECT_ROOT || '/'}css/main.css")
   body.sans-serif.tc.lh-copy.flex.flex-column.items-center.justify-around.vh-85.mh2
     != yield
-    if current.source == 'index'
+    if current.source != 'help'
       script(src="#{process.env.PROJECT_ROOT || '/'}js/compiled.js" defer)
