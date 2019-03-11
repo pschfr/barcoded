@@ -3,12 +3,12 @@
     "short_name": "Barcode Generator",
     "icons": [
         {
-            "src": "android-chrome-144x144.png",
+            "src": "/barcoded/img/favicons/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "background_color": "#000000",
     "display": "standalone"
 }
