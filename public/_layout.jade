@@ -11,7 +11,8 @@ html
     link(rel="mask-icon", href="#{process.env.PROJECT_ROOT || '/'}img/favicons/safari-pinned-tab.svg", color="#000")
     link(rel="shortcut icon", href="#{process.env.PROJECT_ROOT || '/'}img/favicons/favicon.ico")
     link(rel="stylesheet" href="#{process.env.PROJECT_ROOT || '/'}css/main.css")
-  body.sans-serif.tc.lh-copy.flex.flex-column.items-center.justify-around.vh-100.mh2
+  body.sans-serif.tc.lh-copy.flex.flex-column.items-center.justify-around.min-vh-100.mh2
+    != partial("_partials/header")
     != yield
     if current.source != 'help'
       script(src="#{process.env.PROJECT_ROOT || '/'}js/compiled.js" defer)
