@@ -1,9 +1,16 @@
 // Import my custom build of Tachyons
 @import '_tachyons'
 
+// Import dark theme support
+@import '_dark'
+
 // Prevents me from having to use .ma0 on every one
 p, h1
 	@extend .ma0
+
+// All links inherit color from parent
+a
+	@extend .color-inherit, .dim
 
 // Makes canvas tag inherit the max-width: 100% class
 canvas
