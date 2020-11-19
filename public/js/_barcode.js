@@ -16,13 +16,16 @@ if (window.location.pathname == '/' || window.location.pathname == '/barcoded/')
 
 	// When changing the input, do this...
 	input.addEventListener('keyup', function() {
+		// Create new variable for barcode to be rendered so I can make it uppercase
+		let barcodeToBeRendered = this.value.toUpperCase();
+
 		// Clear container
 		container.innerHTML = '';
 		
 		// If input is not empty,
 		if (input.value != '') {
 			// Render a barcode from the input value
-			let newBarcode = ioBarcode.CODE128B(this.value, barcode_opts);
+			let newBarcode = ioBarcode.CODE128B(barcodeToBeRendered, barcode_opts);
 			// and append to page.
 			container.appendChild(newBarcode);
 		} else {
