@@ -10,7 +10,8 @@ module.exports = {
 	// Output bundle location
 	output: {
 		filename: 'compiled.js',
-		path: path.resolve(__dirname, 'public/js')
+		path: path.resolve(__dirname, 'public/js'),
+		hashFunction: 'sha256'
 	},
 	plugins: [
 		// Needed for io-barcode to resolve properly
